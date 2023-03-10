@@ -34,12 +34,11 @@ Tips of the day:
 */
 
 for(let i=1; i<=100; i++){
-    let fizz = i%3 == 0;
-    let buzz = i%5 == 0;
-    if(fizz)
-        console.log("Fizz");
-    else if(buzz)
-        console.log("Buzz");
-    else
+    let fizz = (i%3 == 0 ? "Fizz" : "");
+    let buzz = (i%5 == 0 ? "Buzz" : "");
+    if(!fizz && !buzz)
         console.log(i);
+    else{
+        console.log(fizz + buzz);
+    }
 }
