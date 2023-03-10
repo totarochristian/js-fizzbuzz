@@ -35,8 +35,11 @@ Tips of the day:
 
 for(let i=1; i<=100; i++){
     let fizz = i%3 == 0;
+    let buzz = i%5 == 0;
     if(fizz)
         console.log("Fizz");
+    else if(buzz)
+        console.log("Buzz");
     else
         console.log(i);
 }
