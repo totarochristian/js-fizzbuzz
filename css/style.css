@@ -27,15 +27,29 @@
     width: var(--square-dim);
     height: var(--square-dim);
     background-color: #1389b2;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+.square:hover{
+    background-color: #17a0ce;
 }
 .fizz{
     background-color: #0cd6a1;
 }
+.fizz:hover{
+    background-color: #0cd667;
+}
 .buzz{
     background-color: #ffd166;
 }
+.buzz:hover{
+    background-color: #f3ba3f;
+}
 .fizzbuzz{
     background-color: #f0466f;
+}
+.fizzbuzz:hover{
+    background-color: #e92250;
 }
 
 /*****************************************************************/
