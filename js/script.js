@@ -25,11 +25,18 @@ Tips of the day:
 ----------------------------------------------------   Program steps   ----------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------
 - Write a for to print in the console the numbers from 1 to 100
+- Update the code to print "Fizz" instead of number multiples of 3
+- Update the code to print "Buzz" instead of number multiples of 5
+- Update the code to print "FizzBuzz" instead of number multiples both for 3 and 5
 ---------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------
 */
 
-for(let i=0; i<100; i++){
-    console.log(i+1);
+for(let i=1; i<=100; i++){
+    let fizz = i%3 == 0;
+    if(fizz)
+        console.log("Fizz");
+    else
+        console.log(i);
 }
