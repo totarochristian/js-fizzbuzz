@@ -37,8 +37,8 @@ const squareCont = document.getElementById("squaresCont");
 
 for(let i=1; i<=100; i++){
     let textToAppend;
-    let fizz = (i%3 == 0 ? "Fizz" : "");
-    let buzz = (i%5 == 0 ? "Buzz" : "");
+    let fizz = (i%3 == 0 ? "fizz" : "");
+    let buzz = (i%5 == 0 ? "buzz" : "");
     if(!fizz && !buzz)
         textToAppend = i;
     else
