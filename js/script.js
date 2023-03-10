@@ -33,12 +33,16 @@ Tips of the day:
 ---------------------------------------------------------------------------------------------------------------------------
 */
 
+const squareCont = document.getElementById("squaresCont");
+
 for(let i=1; i<=100; i++){
+    let textToAppend;
     let fizz = (i%3 == 0 ? "Fizz" : "");
     let buzz = (i%5 == 0 ? "Buzz" : "");
     if(!fizz && !buzz)
-        console.log(i);
-    else{
-        console.log(fizz + buzz);
-    }
+        textToAppend = i;
+    else
+        textToAppend = fizz + buzz;
+    
+    squareCont.innerHTML += '<div id="sq_' + i + '" class="square ' + textToAppend + '">' + textToAppend + '</div>';
 }
