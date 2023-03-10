@@ -44,5 +44,5 @@ for(let i=1; i<=100; i++){
     else
         textToAppend = fizz + buzz;
     
-    squareCont.innerHTML += '<div id="sq_' + i + '" class="square ' + textToAppend + '">' + textToAppend + '</div>';
+    squareCont.innerHTML += '<div id="sq_' + i + '" class="square ' + fizz + buzz + '">' + textToAppend + '</div>';
 }
